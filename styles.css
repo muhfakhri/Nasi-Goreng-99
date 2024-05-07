@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+  background-color: #000000;
+}
+
+@font-face {
+  font-family: "tulisan_keren";
+  src: url(fonts.woff2);
+  
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(Street\ Foods.otf)
+}
+
+nav {
+  background: #000000;
+  
+
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: rgb(248, 248, 248);
+  font-family: tulisan_keren;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 17px;
+  text-shadow: 1px 2px 1px #272020;
+  color: #ffffff;
+  
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: rgb(241, 241, 241);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #ff1b1b;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    padding-left: 17px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #2372af;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* Jumbotron styles */
+.jumbotron {
+  background-image: url('pic4.jpg'); 
+  background-size: cover;
+  
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.jumbotron-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: bold;
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+
+
+
+.text-primary {
+  color: #ff0000;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 80px 20px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+ 
+
+  p {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding: 60px 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+ 
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}
+
+
+/* Special Menu styles */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-details p {
+  margin: 5px 0;
+}
+
+.profile-card:hover img {
+  transform: scale(1.1);
+}
+
+.profile-card:hover .profile-details {
+  opacity: 0.8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+#special .card-container {
+  width: 95%;
+  margin: 7rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#special .card-container .card {
+  height: 40rem;
+  width: 30rem;
+  background: #fff;
+  padding: 1rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+#special .card-container .card img {
+  height: 50%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#special .card-container .card p {
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+#special .card-container .card button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #eb0c0c;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 3.5rem;
+  width: 14rem;
+  background: #f90202;
+  color: #fff;
+}
+
+#special .card-container .card button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d84646;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+
+#special .card-container .card button:hover::before {
+  width: 100%;
+}
+
+#special .card-container .card button:hover {
+  color: #000000;
+}
+
+#special .card-container .card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+
+
+/* Kontak styles */
+#kontak {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#kontak article {
+  flex: 1;
+}
+
+#kontak aside {
+  flex: 1;
+  padding-left: 20px;
+}
+
+#kontak h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#kontak img {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#kontak p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 0; 
+}
+
+@media (max-width: 768px) {
+  #kontak {
+    grid-template-columns: 1fr; 
+  }
+
+  #kontak aside {
+    padding-left: 0; 
+    margin-top: 40px; 
+  }
+
+  #kontak img {
+    max-width: 100%;
+  }
+}
+
+
+/* Footer styles */
+footer {
+  background: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.cr-con {
+  font-size: 0.8rem;
+}
+
